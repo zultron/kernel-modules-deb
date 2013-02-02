@@ -1,0 +1,13 @@
+Author: Realtek NIC software team <nicfae@realtek.com>
+Download: http://r8168.googlecode.com/files/r8168-8.035.00.tar.bz2
+
+Files: *
+Copyright: (C) Realtek Semiconductor Corp.
+License: GPLv2+
+
+Files: debian/*
+Copyright: (C) 2009 Cyril Lacoux <clacoux@easter-eggs.com>
+           (C) 2009 Daniel Baumann <daniel@debian.org>
+License: PD
+ The Debian packaging is hereby placed in the public domain (no rights
+ reserved).

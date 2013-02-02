@@ -1,0 +1,6 @@
+kmod-r8168 (8.035.00-1) stable; urgency=low
+
+  * Initial package creation
+
+ -- John Morris <john@zultron.com>  Sat, 02 Feb 2013 00:30:42 -0600
+

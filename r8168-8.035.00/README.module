@@ -1,0 +1,13 @@
+This module packages the Realtek r8168 ethernet driver.
+
+The source tarball should be unpacked from the parent directory such
+that this directory contains a src/ directory and a few other
+(unneeded) files.
+
+URL:
+
+http://code.google.com/p/r8168/
+
+Tarball:
+
+http://r8168.googlecode.com/files/r8168-8.035.00.tar.bz2
