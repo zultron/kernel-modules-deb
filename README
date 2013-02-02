@@ -1,0 +1,16 @@
+These are add-on modules for the Debian kernel.
+
+They work with the kernel-package.
+
+To use them, place the contents of this directory in /usr/src/modules,
+or else set the MODULE_LOC environment variable to this directory.
+
+Then in a make-kpkg style kernel source tree, run
+
+    make-kpkg modules_image
+
+or maybe
+
+    debian/rules modules_image
+
+This will create kernel module packages in the parent directory.
