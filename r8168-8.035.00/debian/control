@@ -6,11 +6,11 @@ Build-Depends: debhelper (>= 7), quilt
 Standards-Version: 3.9.1
 Homepage: http://code.google.com/p/r8168/
 
-Package: kmod-r8168-modules-3.5.7.2-xenomai-2.6.2.1-ubuntu
+Package: kmod-r8168-modules-3.5.7-xenomai-2.6.2.1
 Architecture: any
-Depends: linux-modules-3.5.7.2-xenomai-2.6.2.1-ubuntu | linux-image-3.5.7.2-xenomai-2.6.2.1-ubuntu
+Depends: linux-modules-3.5.7-xenomai-2.6.2.1 | linux-image-3.5.7-xenomai-2.6.2.1
 Provides: r8168-modules
-Description: r8168 modules for Linux (kernel 3.5.7.2-xenomai-2.6.2.1-ubuntu)
+Description: r8168 modules for Linux (kernel 3.5.7-xenomai-2.6.2.1)
  The kmod-r8168 package provides the r8168 kernel module(s) for
  Realtek RTL8168/RTL8111, RTL8168B/RTL8111B, RTL8168C/RTL8111C,
  RTL8168CP/RTL8111CP, RTL8168D/RTL8111D, RTL8168DP/RTL8111DP and
@@ -20,7 +20,7 @@ Description: r8168 modules for Linux (kernel 3.5.7.2-xenomai-2.6.2.1-ubuntu)
  This package contains the set of loadable kernel modules for the r8168
  network driver.
  .
- This package contains the compiled kernel modules for 3.5.7.2-xenomai-2.6.2.1-ubuntu
+ This package contains the compiled kernel modules for 3.5.7-xenomai-2.6.2.1
  .
  If you have compiled your own kernel, you will most likely need to build your
  own kmod-r8168-modules. The kmod-r8168-source package has been provided for
