@@ -61,6 +61,11 @@ binary-modules: prep-deb-files
 	install -D -m 0644 $(SOURCEDIR)/r8168.ko \
 	  debian/$(PACKAGE)-$(KVERS)/lib/modules/$(KVERS)/kernel/drivers/net/r8168.ko
 
+	# Create the r8169 blacklist file
+	install -d -m 755 debian/$(PACKAGE)-$(KVERS)/etc/modprobe.d
+	echo 'blacklist r8169' > \
+	  debian/$(PACKAGE)-$(KVERS)/etc/modprobe.d/blacklist-r8169.conf
+
 	dh_installdocs
 	dh_installchangelogs
 	dh_compress
