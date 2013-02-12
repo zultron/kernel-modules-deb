@@ -45,11 +45,26 @@ kdist_clean: clean
 #
 ### end  KERNEL SETUP
 
+SRC_VER := $(shell echo $(VERSION) | sed 's/-[^-]*//')
+SRC_TARBALL := r8168-$(SRC_VER).tar.bz2
+SRC_URL := http://r8168.googlecode.com/files/$(SRC_TARBALL)
+
+
+# Make sure the source is unpacked
+src/r8168.h:
+	# download if needed
+	if ! test -f ../$(SRC_TARBALL); then \
+	    cd ..; \
+	    wget $(SRC_URL); \
+	fi
+	# unpack into current directory, stripping off top level dir
+	tar xjf ../$(SRC_TARBALL) --strip-components=1
+
 # the binary-modules rule is invoked by module-assistant while processing the
 # kdist* targets. It is called by module-assistant or make-kpkg and *not*
 # during a normal build
 
-binary-modules: prep-deb-files
+binary-modules: prep-deb-files src/r8168.h
 	dh_testroot
 	dh_prep
 
@@ -84,6 +99,8 @@ clean: unpatch
 	#dh_testroot
 
 	dh_clean
+
+	make -f Makefile clean
 
 install: DH_OPTIONS=
 install: build

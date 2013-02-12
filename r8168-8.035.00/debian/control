@@ -2,7 +2,7 @@ Source: kmod-r8168
 Section: admin
 Priority: optional
 Maintainer: John Morris <john@zultron.com>
-Build-Depends: debhelper (>= 7), quilt
+Build-Depends: debhelper (>= 7), quilt, module-assistant
 Standards-Version: 3.9.1
 Homepage: http://code.google.com/p/r8168/
 
