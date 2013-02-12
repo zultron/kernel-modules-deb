@@ -94,13 +94,13 @@ binary-modules: prep-deb-files src/r8168.h
 
 build: patch
 
-clean: unpatch
+clean: unpatch src/r8168.h
 	dh_testdir
 	#dh_testroot
 
 	dh_clean
 
-	make -f Makefile clean
+	rm -f src/*.cmd src/*.o src/*.ko
 
 install: DH_OPTIONS=
 install: build
